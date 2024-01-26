@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HTML Elements 101</title>
+    </head>
+    <body>
+         <!-- headings are for titles -->
+         <h1>This is a Heading 1, biggest and most important text on page, only have one.</h1>
+         <h2>Heading 2</h2>
+         <h3>Heading 3</h3>
+         <h4>Heading 4</h4>
+         <h5>Heading 5</h5>
+         <h6>Heading 6</h6>  
+         <!-- p for paragraph -->
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+            <!-- em(phasis) tag wrap = italic, strong tag wrop - bold -->
+        <p><em>Italic</em> <strong>Bold</strong></p> 
+        <!-- line break use br tag, you can stack them but css can do that too -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. 
+            <br /> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+            officia deserunt mollit anim id est laborum.</p>
+          <!-- use hr tag for line break -->
+          <hr />
+          <!-- making bulleted list -->
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+                <ul>
+                    <li>sub-item 1</li>
+                    <li>sub-item 2</li>
+                    <li>sub-item 3</li>
+                </ul>
+          </ul>
+            <img
+                src="https://www.giftofhospitality.com/wp-content/uploads/2020/03/african-beignets-8.jpg"
+                alt="a tray of golden brown, freshly fried round beignets"
+                width="300px"
+            />
+            <!-- know that image width will mess everyrthing up if you have a style sheet -->
+            <!-- image w/ diff source -->
+            <img 
+                src="./image/beignets.jpeg"
+                alt="a tray of golden brown, freshly fried round beignets"
+                width="300px"
+            />
+            <!-- anchor tags, href determines where anchor tag is pointing -->
+            <!-- target blank = new tag -->
+            <a href="https://www.giftofhospitality.com/african-beignets/" target="_blank">Click here to open new tab</a>
+            <!-- target self = open page in same tab, never link to folder without index file,
+            dot slash (./) can autofill -->
+            <a href="./about/index.html" target="_self">Click here to open new page in same tab </a>
+            <a href="#top">Click here to scroll to an ID on this page</a>
+    </body>
+</html>
