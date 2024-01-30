@@ -1,3 +1,4 @@
+            <!-- NOTES Jan 25, 2024 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -60,5 +61,94 @@
             dot slash (./) can autofill -->
             <a href="./about/index.html" target="_self">Click here to open new page in same tab </a>
             <a href="#top">Click here to scroll to an ID on this page</a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- NOTES Jan 30, 2024 -->
+            <!-- command/ctrl / to comment in any lang -->
+            <p> Here is a form containing basic input types. For more info on HTML elements/tags, see 
+                <a 
+                href="https://www.w3schools.com/html/html_form_elements.asp"
+                target="_blank"
+                >W3 schools form elements.</a>
+                <!-- form action ususally contains link to file or API endpoint to 
+                    process the form data for example processdata.php-->
+                <form action="#" method="POST" name="sampleForm" target="_self"> </form>
+                <fieldset>
+                    <legend>Simple Input Elements</legend>
+                    <p>The box and title of this form group are created by the fieldset and legend tags.</p>
+                    <!-- text the user sees, for= is for accessibility -->
+                    <label for="firstName">First Name</label>
+                    <!-- name for datat processes,  id to make it easier to grab things in javascript-->
+                    <input name="firstName" id="firstName" type="text"/>
+                    <br />
+                    <label for="lastName">Last Name</label>
+                    <input name="lastName" id="lastName" type="text" placeholder="Ndiaye" maxlength="10"/>
+                    <br />
+                    <label for="age">How old are you?</label>
+                    <input name="age" type="number" step="1" min="0" max="100"/>
+                    <br />
+                    <label for="password">Enter Password</label>
+                    <input name="password" id="password" type="password" required />
+                </fieldset>
+
+                <fieldset><legend>Text Areas</legend></fieldset>
+                <p>Text areas are greater for longer text. sometimes you need to enter full sentences/paragraphs</p>
+                <Label for="whyIDM">Why did you apply to IDM?</Label>
+                <textarea name="whyIDM" cols="50" rows="10"></textarea>
+
+                <fieldset><legend>Check Boxes</legend>
+                    <p>check boxes allow the user to select MORE than one option at once. check boxes in the same 
+                        group have the same name, but different values</p>
+                        <label for="Pet">What pets do you have?</label>
+                        <br />
+                        <input type="checkbox" name="Pet" value="dog" />DOG
+                        <br />
+                        <input type="checkbox" name="Pet" value="cat" />CAT
+                        <br />
+                        <input type="checkbox" name="Pet" value="chicken" />CHICKEN
+                        <br />
+                        <input type="checkbox" name="Pet" value="snake" />SNAKE
+                </fieldset>
+
+                <fieldset><legend>Radio Buttons</legend>
+                    <p>check boxes only allow the user to select ONE option at once. radio buttons in the same 
+                        group have the same name, but different values</p>
+                        <label for="favePet">What pets do you have?</label>
+                        <br />
+                        <input type="radio" name="Pet" value="dog" />DOG
+                        <br />
+                        <input type="radio" name="Pet" value="cat" />CAT
+                        <br />
+                        <input type="radio" name="Pet" value="chicken" />CHICKEN
+                        <br />
+                        <input type="radio" name="Pet" value="snake" />SNAKE
+                </fieldset>
+
+                <p>Select Options aka Dropdowns</p>
+                <p>using the select and options tags, you can add items to a dropdown menu</p>
+                <label form="state">Pick a State</label>
+                <br />
+                <select>
+                    <option value="NY">New York</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NH">New Hampshire</option>
+                </select>
+
+                <p>Finally, we need a button to submit our form!</p>
+                <!-- two diff ways to create a button. using input, what we display to user shows up in the value -->
+                <input type="button" value="Submit!!!" name="Submit" />
+                <button role="Button" disabled>Submit</button>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </form>
+            </p>
     </body>
 </html>
