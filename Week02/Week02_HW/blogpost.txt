@@ -1,0 +1,10 @@
+The way this article described the wireframing process, it sounds a lot like the ideation and protypting 
+process that design thinkers undergo when eiher improving an existing product or creating a new one.
+The article states, "it’s essential to gain more clarity about the issues in the problem in order to 
+create a better solution." I certainly agree that involving the stakeholder in the process is imperative 
+because the client knows best what they want their final product to look like so it is not only essentially 
+but generally just smarter to get as much clarity from the stakeholder in order to be 100% clear on what 
+the final wireframing outcome should be. The artcile also emphasizes early feedback, stating that it "helps 
+incorporate and consider the technical limitations and other unforeseen capabilities." I think this goes 
+hand in hand with the previous quote. Clarification and feedback is pretty much one of the most full-proof ways 
+to avoid failure, and this applies not only to wireframing but to any project. 
