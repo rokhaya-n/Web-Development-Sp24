@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Box Model w/ Inline-Block</title>
+    <!-- internal style sheet, these styles ONLY apply to THIS file -->
+
+    <!-- google font - can either copy links or.... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        /* ...or import via url */
+        @import url(https://fonts.googleapis.com/css2?family=Honk&display=swap);
+        /* universal selector*/
+        * {
+            margin: 0;
+            /* get rid of annoying white margin, helpful for site with colorful background */
+        }
+
+        /* tag/element/type selector, 1 em = 16 pc */
+        h1 {
+            /* apply one side at a time individually */
+            margin-top: 1em;
+            /* 2 values means top/bottom and left/right margins */
+            margin: 1em 0.5em;
+            /* 4 values starts margin at top and goes clockwise */
+            margin: 2em 0.5em 1em 0.5em;
+            /* the margin  code line on the bottom is the one that is unherited, overrides everything else*/
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 4px 4px 10px palevioletred;
+            /* third argument in text-shadow changes blur */
+            font-weight: 200;
+        }
+
+        /* changing paragraph style in body */
+        p {
+            margin: 0.5em 0;
+            line-height: 1.5;
+        }
+
+        .silly_font {
+            font-family: fantasy;
+            color: green;
+            /* color in css is only for text */
+            /* class names can be reused */
+        }
+
+        /* one instance of an id per page */
+        #important_text{
+            font-family: 'Honk', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* descendant selector, for ONLY anchor tags inside paragraphs */
+        p a {
+            color: rgba(255, 102, 0, 0.5); /* transparent orange */
+            text-decoration: none;
+        }
+
+        a {
+            color: purple;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1 Displays Block</h1>
+    <p>
+       <span class="silly_font"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at metus at 
+        tellus ullamcorper lobortis non egestas ligula. Nullam lobortis tempus ligula 
+        eget maximus. Integer feugiat, tortor ut sagittis sagittis, mauris mi pellentesque 
+        ligula, sit amet efficitur mauris elit nec mauris. Suspendisse egestas pellentesque 
+        malesuada. Cras tempus placerat mi, aliquet ultrices ligula imperdiet sed. Aenean 
+        semper porta urna, ut porttitor diam feugiat sit amet. Nunc maximus pretium neque, 
+        ut porta tellus suscipit at.</span>
+    </p>
+    <p>
+        <a href="#"> Aliquam posuere, massa a malesuada pretium, erat odio egestas ante, vitae pretium 
+        ante ligula ac arcu. Suspendisse non felis urna. </a>Aenean dictum fringilla viverra. 
+        Sed metus est, tempus elementum mattis at, fringilla non diam. Vestibulum nec diam 
+        in orci hendrerit aliquam eget vel ex. Quisque dolor turpis, auctor ut malesuada eget, 
+        porta porttitor massa. <span class="silly_font">Aliquam vestibulum, leo sed egestas sagittis, diam massa pharetra 
+        eros, ut hendrerit diam enim et magna. In auctor sapien sit amet elit auctor lobortis. 
+        Mauris vel lacinia velit. In laoreet vel mauris et ornare. Curabitur in pharetra massa. 
+        Donec iaculis ut ex ut pharetra. </span>Nunc lobortis velit at metus rutrum porttitor. Etiam at 
+        purus mi. In dapibus, ipsum non volutpat elementum, purus velit feugiat est, sit amet 
+        scelerisque massa magna quis ligula.
+    </p>
+    <p id="important_text">
+        Quisque at lorem non purus condimentum viverra et venenatis nibh. Pellentesque habitant morbi 
+        tristique senectus et netus et malesuada fames ac turpis egestas. Nulla finibus interdum ante, 
+        sit amet convallis dui bibendum a. Integer commodo urna ultricies arcu ullamcorper sagittis. 
+        Vestibulum iaculis dignissim nibh, sit amet cursus sem convallis ac. Vestibulum at dictum massa. 
+        Integer facilisis id leo vitae auctor. Pellentesque sem nunc, gravida ac gravida quis, elementum 
+        eu quam. In laoreet massa velit, et pharetra velit tincidunt nec. Morbi commodo venenatis turpis, 
+        non placerat libero luctus id.
+    </p>
+    <a href="#">Link outside of p tag</a>
+
+  </body>
+</html>
