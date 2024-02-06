@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Box Model w/ Inline-Block</title>
+    <!-- internal style sheet w/ google font import -->
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        /*  font-family: "Indie Flower", cursive; */
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: brown;
+            /* overflow: hidden;
+            height: 10px; 
+            anything that overflows over the 10 px gets hidden */
+            /* parent elemtns of items that display inline block may need to have the font size 
+            zero'ed out to remove space btw characters */
+            font-size: 0;
+            font-family: "Indie Flower", cursive;
+            /* x, y, blur(optional), spread(optional), color */
+            box-shadow: 5px 5px 15px paleturquoise;
+        }
+
+        li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        /* descendant selector */
+        li a {
+            display: block;
+            text-align: center;
+            width: 100px;
+            padding: 10px;
+            text-decoration: none;
+            color: wheat;
+        }
+
+        li a.active {
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        li a:hover {
+            background-color: #111;
+            color: white;
+        }
+        </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+        </ul>
+    </nav>
+  </body>
+</html>
