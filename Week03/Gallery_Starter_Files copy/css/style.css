@@ -1,0 +1,62 @@
+/* always import things at the top and throw in font family info too */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: "Kaushan Script", cursive; */
+
+/* universal selector getting rid of margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: "Kaushan Script", cursive;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+    /* will need to redefine later when you want fonts to show up */
+}
+
+.polaroid {
+    width: 260px;
+    /* 20 px on each side, subtracted from 300px width for 3 grid image */
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    /* position inside relatively positioned parent div */
+    /* if you absolute position something and it disappears, you have to 
+    relatively position the parent */
+
+}
+
+/* styling for all images inside polaroid class */
+.polaroid img {
+    width: 100%;
+    /* 100% of parent div */
+    height: auto;
+    border: 10px solid #ccc;
+    /* width, style and color */
+    border-bottom-width: 45px;
+    /* for polaroid style */
+}
+
+/* all p tags inside polaroid */
+.polaroid p {
+    position: absolute;
+    /* when smt needs to be positioned absolute, thats the only time you need 
+    to position a parent container relatively */
+    bottom: 14px;
+    font-size: 1rem;
+    width: 280px;
+    /* width of image including border */
+    text-align: center;
+    color: #444;
+
+}

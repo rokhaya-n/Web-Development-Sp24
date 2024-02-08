@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+}
+
+div {
+    border: 1px solid red;
+    /* borders: need to know width, style and color */
+    padding: 10px;
+}
+
+.abs-no-parent {
+    background-color: cornflowerblue;
+    position: absolute;
+    /* html default position is static */
+    top: 20%;
+    /* to cover whole screen, 0 fromt top bottom left and right */
+    /* top is based on body tag */
+    right: 100px;
+}
+
+.rel-parent {
+    background-color: blueviolet;
+    width: 50%;
+    /* 50% of whatever this div was going to take up on the screen */
+    height: 100vh;
+    /* vh = viewport height */
+    position: relative;
+    /* very important for parent divs */
+}
+
+.abs-rel-parent {
+    background-color: rgba(12,237,16);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 10px;
+    /* 10 px from the bottm of parent div */
+}
+
+header {
+    background-color: darkorange;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /* basically draw order aka bring to front */
+}
