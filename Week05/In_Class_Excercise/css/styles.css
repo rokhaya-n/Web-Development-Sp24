@@ -1,0 +1,207 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox Simple Rows and Columns */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* extra styles so we can see our divs */
+    border: 1px solid purple;
+    background-color: rgba(255, 0, 255, 0.3);
+    min-height: 400px;
+}
+
+.item {
+    border: 1px solid cornflowerblue;
+    background-color: rgba(255, 0, 255, 0.3);
+    width: 23%;
+    height: 300px;
+}
+
+/* Atomic CSS */
+
+/* Flex Container Properties */
+.center {
+    /* anytime we want smt to center horiz and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Flex Item Properties */
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-stretch {
+    align-self: stretch;
+    /* override needed to wipe out our fixed 300px heigh for all .item class */
+    height: auto;
+}
+
+@media screen and (max-wdith: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .self-stretch {
+        width: auto;
+        height: 200px;
+    }
+
+}
+
+/* Standard Layout Example */
+
+header {
+  display: flex;  
+  min-height: 100px;
+  background-color: aqua;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+}
+
+.grid-item {
+    width: 23%;
+    margin: 1%;
+}
+
+.secondary-nav {
+    min-width: 25%;
+    background-color: aquamarine;
+}
+
+.menu {
+    /* remove deafult styling */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid gray;
+}
+
+.menu span {
+    padding: 1rem;
+    font-size: 2rem;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600px;
+    /* 400px = reg, 800px = bold, 600px = semi-bold */
+    display: flex;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: coral;
+    min-height: 100px;
+    display: flex;
+}
+
+@media screen and (max-wdith: 1024px) {
+    .grid-item {
+        width: 48%;
+    }
+}
+
+ @media screen and (max-wdith: 768px) {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .secondary-nav {
+        order: 1;
+        /* only for display flex */
+    }
+
+    .grid-container {
+        flex-direction: column;
+        order: 2;
+    }
+
+    .grid-item {
+        width: 95%;
+    }
+ }
