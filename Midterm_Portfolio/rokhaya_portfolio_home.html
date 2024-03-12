@@ -1,34 +1,95 @@
-<!-- never forget to link css sheet -->
-
-<!-- TODO:
-  !home page divs
-      - about me class: headshot div, description div
-      - squiggly elements
-      - menu button and navbar
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rokhaya Diouma Ndiaye Portfolio</title>
+    <!-- google purple purse font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="css/portfolio_styles.css"/>
   </head>
   <body>
-    <div class="homePage">
-      <div class="Aboutmewords">
-        <h2>About Me</h2>
+
+    <main>
+      <div class="homePage">
+        <!-- squigglies in the background -->
+        <!-- main title -->
+        <div class="Rokhaya">
+          <h1>Rokhaya</h1>
+        </div>
+        <div class="Diouma">
+          <h1>Diouma</h1>
+        </div>
+        <div class="Ndiaye">
+          <h1>Ndiaye</h1>
+        </div>
+        <!-- about me section -->
+        <div class="aboutMeWords">
+          <h2>About Me</h2>
+        </div>
+
+        <!-- my description -->
+        <div class="descriptionMe">
+        <article>
+          <p>
+            I am a second-year liberal studies student at NYU, on track to major in Integrated 
+            Design and Media at the Tandon School of Engineering, with a minor in Technology 
+            Management and Design. I have a Senegalese background, but I am based in NYC. Some 
+            of my interests include DJ-ing, music exploration, and sci-fi dystopia media (books, 
+            film, TV). This site houses some of my recent projects that I would like to showcase 
+            and will be continuously updated as I take on more endeavors.
+          </p>
+        </article>
+        </div>
+
+        <!-- headshot -->
+        <div class="headshot">
+          <img src="./img/headshot.JPG" alt="Headshot of Rokhaya Diouma Ndiaye against white background."/>
+        </div>
+
+        <!-- recentely added section -->
+        <div class="recentlyAdded">
+          <div class="recentText">
+            <h2>Recently Added</h2>
+          </div>
+          <div class="recentPreview"></div>
+        </div>
       </div>
-      <div class="headshot">
-        <img src="./img/headshot.JPG" alt="Headshot of Rokhaya Diouma Ndiaye against white background."/>
-      </div>
-      <article>
-        <p>Description of me</p>
-      </article>
+    </main>
+
+    <!-- visual background elements -->
+    <div class="bgElements">
+      <img src="./bg_elements/four_star.png" class="fourStar"/>
+      <img src="./bg_elements/line_squiggle.png" class="lineSquiggle"/>
+      <img src="./bg_elements/pink_tornado.png" class="pinkTornado"/>
+      <img src="./bg_elements/plus.png" class="plus"/>
+      <img src="./bg_elements/purple dot.png" class="purpleDot"/>
+      <img src="./bg_elements/spark.png" class="spark"/>
+      <img src="./bg_elements/sparks.png" class="sparks"/>
+      <img src="./bg_elements/yellow_squiggle.png" class="yellowSquiggle"/>    
     </div>
+
+    <!-- nav bar -->
+    <nav>
+      <ul class="menu">
+        <li><a href="rokhaya_portfolio_home.html">Home</a></li>
+        <li>Portfolio Items
+            <ul>
+            <li><a href="./portfolio_items/rokhaya_creative_coding.html">Creative Coding</a></li>
+            <li><a href="./portfolio_items/rokhaya_graphic_design.html">Graphic Design</a></li>
+            <li><a href="./portfolio_items/rokhaya_written_works.html">Written Works</a></li>
+            <li><a href="./portfolio_items/rokhaya_radio.html">Radio</a></li>
+            </ul>
+        </li>
+        <li><a href="connect_wme.html">Connect With Me</a></li>     
+      </ul>
+    </nav>
+
+    <!-- button to hide/show menu -->
+    <!-- <button class="menuButton"><img src="./bg_elements/squiggly_menu.png"/></button> -->
+
   </body>
 </html>

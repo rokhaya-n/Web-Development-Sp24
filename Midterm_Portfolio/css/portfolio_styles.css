@@ -1,0 +1,160 @@
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    color: rgb(252, 244, 229);
+    background-color: #291A34;
+    font-family: "Purple Purse", serif;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* HOMEPAGE SECTION */
+.homePage {
+    display: flex;
+    position: relative;
+    padding: 2rem;
+}
+
+.Rokhaya {
+    font-size: 35px;
+    position: absolute;
+    align-items: center;
+    left: 40%;
+    top: 32%;
+}
+
+.Diouma {
+    font-size: 35px;
+    position: absolute;
+    align-items: center;
+    left: 45%;
+    top: 50%;
+}
+
+.Ndiaye {
+    font-size: 35px;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 67%;
+}
+
+.descriptionMe {
+    position: absolute;
+    align-items: center;
+    top: 130%;
+    left: 40%;
+    width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.headshot {
+    position: relative;
+    top: 35rem; 
+    left: 4rem;
+}
+
+.aboutMeWords {
+    z-index: 20;
+    font-size: 25px;
+    position: absolute;
+    background-color: #5a3970;
+    padding: 0 20px;
+    border-radius: 12px;
+    top: 35rem; 
+    left: 18rem;
+}
+
+/* BACKGROUND ELEMENTS */
+.fourStar, .lineSquiggle, .pinkTornado, .plus, 
+.purpleDot, .spark, .sparks, .yellowSquiggle {
+    opacity: 0.7;
+    width: 20px;
+}
+
+
+/* MENU NAVBAR/DROP DOWN*/
+.menu {
+    text-decoration: none;
+    position: absolute;
+    align-items: center;
+    left: 60%;
+    top: 5%;
+}
+
+/* .menuButton {
+    background-color: #291A34;
+    border: none;
+}
+
+button {
+    position: absolute;
+    top: 80%;
+    size: 10px;
+} */
+
+ul li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #5a3970;
+    transition: all 0.5s;
+    border-radius: 12px;
+}
+
+ul li:hover {
+    background: #7f519d;
+    color: rgb(252, 244, 229);
+}
+
+/* unordered list inside portfolio */
+ul li ul {
+    position: absolute;
+    padding: 0;
+    top: 65px;
+    left: 0;
+    width: 150px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+/* indiv list items inside portfolio */
+ul li ul li {
+    background: #5a3970;
+    display: block;
+    color: rgb(252, 244, 229);
+}
+
+/* how on list item inside drop down */
+ul li ul li:hover {
+    background: #7f519d;
+    color: rgb(252, 244, 229);
+}
+
+/* when im hovering on list item inside first ul, only apply to ul inside list item (portfolio) */
+ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* RECENTLY ADDED SECTION */
+.recentlyAdded {
+    position: absolute;
+    top: 240%;
+    left: 40%;
+    font-size: 25px;
+}
