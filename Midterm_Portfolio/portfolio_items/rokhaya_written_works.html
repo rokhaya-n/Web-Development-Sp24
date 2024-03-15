@@ -11,6 +11,72 @@
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="../css/portfolio_styles.css"/>
   </head>
+  
   <body>
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="../bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="../rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+    <!-- nav bar -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="../rokhaya_portfolio_home.html">Home</a></li>
+          <li>Portfolio Items
+            <ul>
+            <li><a href="./rokhaya_creative_coding.html">Creative Coding</a></li>
+            <li><a href="./rokhaya_graphic_design.html">Graphic Design</a></li>
+            <li><a href="./rokhaya_written_works.html">Written Works</a></li>
+            <li><a href="./rokhaya_radio.html">Radio</a></li>
+            </ul>
+          </li>
+          <li><a href="../connect_wme.html">Connect</a></li>     
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+    <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
     
+    <main>
+      <div class="wwPageTitle">
+        <h1>Written Works</h1>
+      </div>
+
+      <div class="predatoryTitle">
+        <h2>Predatory</h2>
+      </div>
+      <div class="predatory">
+        <iframe src="https://drive.google.com/file/d/1-Sh7L40LQ23qK_hmJBrtG7t9cxnyJVyR/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="predatoryDes">
+        <p>An analytical take on Jordan Peele’s second film, Nope, a horror/sci-fi 
+          release that blends Black cowboys and UFOs to create an indirect yet 
+          stimulating commentary on capitalism and exploitation.</p>
+      </div>
+
+      <div class="hExcessTitle">
+        <h2>Hoes in Excess</h2>
+      </div>
+      <div class="hExcess">
+        <iframe src="https://drive.google.com/file/d/18t5T3We0aWD_DdA26NKPBxyB_Dq0sL2n/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="hExcessDes">
+        <p>A Research paper tackling the hypersexualization of black women 
+          in american Hip-hip, from the historical origins of the crazed vixen 
+          to the modern day hoe.</p>
+      </div>
+    <!-- to space out the bottom -->
+    <div class="bottomSpaceWWT"></div>
+    </main>
+
   </body>

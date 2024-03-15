@@ -11,11 +11,45 @@
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="css/portfolio_styles.css"/>
   </head>
-  <body>
 
-    <main>
+  <body>
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="./bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="./rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+      <!-- nav bar -->
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="rokhaya_portfolio_home.html">Home</a></li>
+            <li>Portfolio Items
+              <ul>
+              <li><a href="./portfolio_items/rokhaya_creative_coding.html">Creative Coding</a></li>
+              <li><a href="./portfolio_items/rokhaya_graphic_design.html">Graphic Design</a></li>
+              <li><a href="./portfolio_items/rokhaya_written_works.html">Written Works</a></li>
+              <li><a href="./portfolio_items/rokhaya_radio.html">Radio</a></li>
+              </ul>
+            </li>
+            <li><a href="connect_wme.html">Connect</a></li>     
+          </ul>
+        </nav>
+      </div>
+      </div>
+
+          <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
+
+      <!-- homepage divs -->
+      <main>
       <div class="homePage">
-        <!-- squigglies in the background -->
         <!-- main title -->
         <div class="Rokhaya">
           <h1>Rokhaya</h1>
@@ -30,7 +64,6 @@
         <div class="aboutMeWords">
           <h2>About Me</h2>
         </div>
-
         <!-- my description -->
         <div class="descriptionMe">
         <article>
@@ -44,52 +77,45 @@
           </p>
         </article>
         </div>
-
         <!-- headshot -->
         <div class="headshot">
           <img src="./img/headshot.JPG" alt="Headshot of Rokhaya Diouma Ndiaye against white background."/>
         </div>
-
         <!-- recentely added section -->
-        <div class="recentlyAdded">
           <div class="recentText">
             <h2>Recently Added</h2>
           </div>
-          <div class="recentPreview"></div>
-        </div>
+          <div class="recentHover">
+            <h3>Hover to see images</h3>
+          </div>
+          <div class="recentClick">
+            <h3>Click to see images</h3>
+          </div>
+          <div class="previews">
+            <div class="recentPreview1">
+              <img src="./img/wsn1a.png"/>
+            </div>
+            <div class="buttonLook1">
+              <button><a href="./portfolio_items/rokhaya_graphic_design.html">Take a closer look</a></button>
+            </div>
+            <div class="preview1Text">
+              <p>WSN Business Cards</p>
+            </div>
+
+            <div class="recentPreview2">
+              <img src="./img/djboard.png"/>
+            </div>
+            <div class="buttonLook2">
+              <button><a href="./portfolio_items/rokhaya_creative_coding.html">Take a closer look</a></button>
+            </div>
+            <div class="preview2Text">
+              <p>Digital DJ Board</p>
+            </div>
+          </div>
       </div>
+    <!-- to space out the bottom -->
+    <div class="bottomSpaceH"></div>
     </main>
-
-    <!-- visual background elements -->
-    <div class="bgElements">
-      <img src="./bg_elements/four_star.png" class="fourStar"/>
-      <img src="./bg_elements/line_squiggle.png" class="lineSquiggle"/>
-      <img src="./bg_elements/pink_tornado.png" class="pinkTornado"/>
-      <img src="./bg_elements/plus.png" class="plus"/>
-      <img src="./bg_elements/purple dot.png" class="purpleDot"/>
-      <img src="./bg_elements/spark.png" class="spark"/>
-      <img src="./bg_elements/sparks.png" class="sparks"/>
-      <img src="./bg_elements/yellow_squiggle.png" class="yellowSquiggle"/>    
-    </div>
-
-    <!-- nav bar -->
-    <nav>
-      <ul class="menu">
-        <li><a href="rokhaya_portfolio_home.html">Home</a></li>
-        <li>Portfolio Items
-            <ul>
-            <li><a href="./portfolio_items/rokhaya_creative_coding.html">Creative Coding</a></li>
-            <li><a href="./portfolio_items/rokhaya_graphic_design.html">Graphic Design</a></li>
-            <li><a href="./portfolio_items/rokhaya_written_works.html">Written Works</a></li>
-            <li><a href="./portfolio_items/rokhaya_radio.html">Radio</a></li>
-            </ul>
-        </li>
-        <li><a href="connect_wme.html">Connect With Me</a></li>     
-      </ul>
-    </nav>
-
-    <!-- button to hide/show menu -->
-    <!-- <button class="menuButton"><img src="./bg_elements/squiggly_menu.png"/></button> -->
 
   </body>
 </html>

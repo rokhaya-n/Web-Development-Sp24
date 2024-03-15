@@ -9,8 +9,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
     <!-- linking stylesheet -->
-    <link rel="stylesheet" href="../css/portfolio_styles.css"/>
+    <link rel="stylesheet" href="./css/portfolio_styles.css"/>
   </head>
+  
   <body>
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="./bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="./rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+    <!-- nav bar -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="./rokhaya_portfolio_home.html">Home</a></li>
+          <li>Portfolio Items
+              <ul>
+              <li><a href="./portfolio_items/rokhaya_creative_coding.html">Creative Coding</a></li>
+              <li><a href="./portfolio_items/rokhaya_graphic_design.html">Graphic Design</a></li>
+              <li><a href="./portfolio_items/rokhaya_written_works.html">Written Works</a></li>
+              <li><a href="./portfolio_items/rokhaya_radio.html">Radio</a></li>
+              </ul>
+          </li>
+          <li><a href="./connect_wme.html">Connect</a></li>     
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+    <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
+
+    <main>
+      <div class="connectPageTitle">
+        <h1>Connect With Me</h1>
+      </div>
+      <div class="headshotConnect">
+        <img src="./img/headshot.JPG"/>
+      </div>
+      <div class="linkedin">
+        <!-- opens in new tab -->
+        <a href="https://www.linkedin.com/in/rokhaya-diouma-ndiaye" target="_blank">LinkedIn</a>
+      </div>
+      <div class="nyuEmail">
+        <p>rdn9162@nyu.edu</p>
+      </div>
+      <div class="wnyuEmail">
+        <p>rokhaya@wnyu.org</p>
+      </div>
+    <!-- to space out the bottom -->
+    <div class="bottomSpaceC"></div>
+    </main>
     
   </body>

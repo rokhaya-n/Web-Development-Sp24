@@ -11,6 +11,87 @@
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="../css/portfolio_styles.css"/>
   </head>
+  
   <body>
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="../bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="../rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+    <!-- nav bar -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="../rokhaya_portfolio_home.html">Home</a></li>
+          <li>Portfolio Items
+            <ul>
+            <li><a href="./rokhaya_creative_coding.html">Creative Coding</a></li>
+            <li><a href="./rokhaya_graphic_design.html">Graphic Design</a></li>
+            <li><a href="./rokhaya_written_works.html">Written Works</a></li>
+            <li><a href="./rokhaya_radio.html">Radio</a></li>
+            </ul>
+          </li>
+          <li><a href="../connect_wme.html">Connect With Me</a></li>     
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+    <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
+
+    <main>
+      <div class="gdPageTitle">
+        <h1>Graphic Design</h1>
+      </div>
+      <div class="wsnTitle">
+        <h2>WSN Business Cards</h2>
+      </div>
+        <div class="card1Text">
+          <h2>Version 1</h2>
+        </div>
+        <div class="wsn1a">
+          <img src="../img/wsn1a.png"/>
+        </div>
+        <div class="wsn1b">
+          <img src="../img/wsn1b.png"/>
+        </div>
+
+        <div class="card2Text">
+          <h2>Version 2</h2>
+        </div>
+        <div class="wsn2a">
+          <img src="../img/wsn2a.png"/>
+        </div>
+        <div class="wsn2b">
+          <img src="../img/wsn2b.png"/>
+        </div>
+
+        <div class="card3Text">
+          <h2>Version 3</h2>
+        </div>
+        <div class="wsn3a">
+          <img src="../img/wsn3a.png"/>
+        </div>
+        <div class="wsn3b">
+          <img src="../img/wsn3b.png"/>
+        </div>
+
+      <div class="wpTitle">
+        <h2>WP Training Certificate</h2>
+      </div>
+      <div class="wpCert">
+        <img src="../img/wpcert.png"/>
+      </div>
+    <!-- to space out the bottom -->
+    <div class="bottomSpaceGD"></div>
+    </main>
     
   </body>

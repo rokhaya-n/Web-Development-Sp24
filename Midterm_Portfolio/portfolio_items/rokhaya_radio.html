@@ -11,6 +11,61 @@
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="../css/portfolio_styles.css"/>
   </head>
+  
   <body>
+    <!-- radio, give id, make div, toy with iframe code, give iframes different classed to differientiate them-->
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="../bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="../rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+    <!-- nav bar -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="../rokhaya_portfolio_home.html">Home</a></li>
+          <li>Portfolio Items
+            <ul>
+            <li><a href="./rokhaya_creative_coding.html">Creative Coding</a></li>
+            <li><a href="./rokhaya_graphic_design.html">Graphic Design</a></li>
+            <li><a href="./rokhaya_written_works.html">Written Works</a></li>
+            <li><a href="./rokhaya_radio.html">Radio</a></li>
+            </ul>
+          </li>
+          <li><a href="../connect_wme.html">Connect</a></li>     
+        </ul>
+      </nav>
+    </div>
+    </div>
+  
+    <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
     
+    <main>
+      <div class="rPageTitle">
+        <h1>Radio</h1>
+      </div>
+      <div class="parigoTitle">
+        <h2>Pas Trop Parigo</h2>
+      </div>
+        <div class="radioGraphic">
+          <img src="../img/pastropparigo.png"/>
+        </div>
+        <div class="radioDes">
+          <p>Pas Trop Parigo is an Afrobeats party except it's exclusively French. 
+            Dedicated to all francophone West Africans from budding singers to the 
+            most revered musical veterans. Live on WNYU 89.1 FM every Tues @ 11:30pm.</p>
+        </div>
+        <div class="spotify"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5XAhDnSaQVgub5V6epM2iA?utm_source=generator" width="70%" height="800" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+      <!-- to space out the bottom -->
+      <div class="bottomSpaceRT"></div>
+      </main>
+      
   </body>

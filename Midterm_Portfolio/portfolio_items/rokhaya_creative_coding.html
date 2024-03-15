@@ -11,6 +11,84 @@
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="../css/portfolio_styles.css"/>
   </head>
+
   <body>
+    <div class="header">
+    <!-- button to hide/show menu -->
+    <button class="menuButton" onclick="toggleMenu()"><img src="../bg_elements/squiggly_menu.png"/></button>
+    <!-- clickable initials + portfolio for header that takes you back to home -->
+    <div class="headerInitials">
+      <a href="../rokhaya_portfolio_home.html"><h1>RDN Portfolio</h1></a>
+    </div>
+    <!-- nav bar -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="../rokhaya_portfolio_home.html">Home</a></li>
+          <li>Portfolio Items
+            <ul>
+            <li><a href="./rokhaya_creative_coding.html">Creative Coding</a></li>
+            <li><a href="./rokhaya_graphic_design.html">Graphic Design</a></li>
+            <li><a href="./rokhaya_written_works.html">Written Works</a></li>
+            <li><a href="./rokhaya_radio.html">Radio</a></li>
+            </ul>
+          </li>
+          <li><a href="../connect_wme.html">Connect</a></li>     
+        </ul>
+      </nav>
+    </div>
+    </div>
+
+    <!-- show and hide menu -->
+    <script type="text/javascript">
+      function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('show');
+      }
+    </script>
     
+    <main>
+      <div class="ccPageTitle">
+        <h1>Creative Coding Projects (p5.js)</h1>
+      </div>
+      
+      <div class="ccOneName"><h2>Digital DJ Board</h2></div>
+      <div class="ccOneImg">
+        <div style="max-width:1280px"><div style="position:relative;padding-bottom:56.25%;"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23426271/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id=1_xhubghlh&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[mediaProxy.mediaPlayFrom]=0&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_442ze2s5" width="1280" height="720" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="THE BIG ONE!!!!!" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;"></iframe></div></div>
+      </div>
+      <div class="djboardGithub">
+        <!-- opens in new tab -->
+        <button><a href="https://github.com/rokhaya-n/Rokhaya-Portfolio/blob/38292c3f90e6cb462d75ab97021ed00dad3dad15/THE%20BIG%20ONE/sketch.js" target="_blank">Github Code</a></button>
+      </div>  
+      <div class="ccOneDes">
+        <p>A sound manipulation-focused project where 
+        I collaborated with a partner to create a digital DJ board that 
+        allows users to remix songs from different regions of the world. 
+        Three songs from each continent (excluding Australia) have been 
+        preloaded into the sketch. The user has the option to change the 
+        speed and distortion levels of the song, and create an echo effect. 
+        There are also some fun sound effects. Users can record and download 
+        their remixed song, and save it as a .wav file on their desktops.</p>
+      </div>
+
+      <div class="ccTwoName"><h2>24HR Clock</h2></div>
+      <div class="ccTwoImg">
+        <div style="max-width:1280px"><div style="position:relative;padding-bottom:56.25%"><iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1674401/sp/167440100/embedIframeJs/uiconf_id/23426271/partner_id/1674401?iframeembed=true&playerId=kaltura_player&entry_id=1_h5jywo7i&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[LeadWithHLSOnFlash]=true&amp;flashvars[mediaProxy.mediaPlayFrom]=0&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_dl52frsa" width="1280" height="720" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="24HR Clock" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;"></iframe></div></div>  
+      </div>   
+      <div class="clockGithub">
+        <!-- opens in new tab -->
+        <button><a href="https://github.com/rokhaya-n/Rokhaya-Portfolio/blob/be2b9bab3e33732853e00b37f461de4d94044c60/24%20hour%20song%20-%20clock/sketch.js" target="_blank">Github Code</a></button>
+      </div>  
+      <div class="ccTwoDes">
+        <p>A time-based media project where I have recreated the Apple Music 
+          now playing view, except instead of a 3-4 minute song, The current 
+          “song” is a 24-hour day. The song title is displayed as the current 
+          date, the artist is the current year, and the progress line inches 
+          on as the day goes. In the AM, the color pallet for the song cover 
+          turns darker and gets brighter in the AM.</p>
+      </div>
+    <!-- to space out the bottom -->
+    <div class="bottomSpaceCC"></div>
+    </main>
+
   </body>
