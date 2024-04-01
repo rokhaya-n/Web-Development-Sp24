@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Shuffler</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <ul id="colorList">
+    </ul>
+
+    <form>
+        <fieldset>
+            <legend>Click to shuffle font colors</legend>
+            <button type="button" id="shuffleBtn">Shuffle Font Colors</button>
+        </fieldset>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // assign HTML elements to variables
+            // add event listeners to HTML elements
+            let shuffleBtn = document.getElementById('shuffleBtn');
+            shuffleBtn.addEventListener('click', shuffleColors);
+
+            // Populate color list
+            let colorList = document.getElementById('colorList');
+            colorNames.forEach(color => {
+                let listItem = document.createElement('li');
+                listItem.textContent = color;
+                colorList.appendChild(listItem);
+            });
+        });
+
+        let colorNames = [
+            'pink',
+            'red',
+            'orange',
+            'yellow',
+            'lime',
+            'green',
+            'cyan',
+            'sky blue',
+            'dark blue',
+            'indigo',
+            'violet',
+            'burgundy',
+        ];
+
+        function shuffleColors() {
+            let colorListItems = document.querySelectorAll('#colorList li');
+            colorListItems.forEach(item => {
+                let randomColorIndex = Math.floor(Math.random() * colorNames.length);
+                let randomColor = colorNames[randomColorIndex];
+                item.style.color = randomColor;
+            });
+        }
+    </script>
+</body>
+</html>
