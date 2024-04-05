@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Shuffler</title>
-    <style>
-        h1 {
-            text-transform: uppercase;
-        }
-    </style>
 </head>
 <body>
-    <ul id="colorList">
-    </ul>
+    <fieldset>
+        <legend>click to shuffle font colors!</legend>
+        <button type="button" id="shuffleBut">Shuffle Font Colors</button>
+        <button type="button" id="resetBut">Reset Font Colors</button>
 
-    <form>
-        <fieldset>
-            <legend>Click to shuffle font colors</legend>
-            <button type="button" id="shuffleBtn">Shuffle Font Colors</button>
-        </fieldset>
-    </form>
+        <ul id="colorList">
+        </ul>
+    </fieldset>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // assign HTML elements to variables
-            // add event listeners to HTML elements
-            let shuffleBtn = document.getElementById('shuffleBtn');
-            shuffleBtn.addEventListener('click', shuffleColors);
+        let ogColors = []; // array to hold og colors
 
-            // Populate color list
+        document.addEventListener('DOMContentLoaded', function () {
+            // assigning HTML to js
+            let shuffleBut = document.getElementById('shuffleBut');
+            shuffleBut.addEventListener('click', shuffleColors);
+
+            // setting up reset feature
+            let resetBut = document.getElementById('resetBut');
+            resetBut.addEventListener('click', resetColors);
+
             let colorList = document.getElementById('colorList');
             colorNames.forEach(color => {
                 let listItem = document.createElement('li');
                 listItem.textContent = color;
                 colorList.appendChild(listItem);
+                ogColors.push(color);
             });
         });
 
+        // array for list of color names
         let colorNames = [
             'pink',
             'red',
@@ -45,11 +45,8 @@
             'lime',
             'green',
             'cyan',
-            'sky blue',
-            'dark blue',
+            'blue',
             'indigo',
-            'violet',
-            'burgundy',
         ];
 
         function shuffleColors() {
@@ -58,6 +55,13 @@
                 let randomColorIndex = Math.floor(Math.random() * colorNames.length);
                 let randomColor = colorNames[randomColorIndex];
                 item.style.color = randomColor;
+            });
+        }
+
+        function resetColors() {
+            let colorListItems = document.querySelectorAll('#colorList li');
+            colorListItems.forEach((item, index) => {
+                item.style.color = ogColors[index]; // Reset color to original
             });
         }
     </script>
