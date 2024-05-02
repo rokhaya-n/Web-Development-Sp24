@@ -46,7 +46,7 @@ canvas {
 .mixtapePage,
 .zinePage {
   padding: 0;
-  width: 370px;
+  width: 600px;
   height: 35px;
   background-color: rgb(150, 1, 1);
   font-family: "Fascinate", system-ui;
@@ -361,7 +361,7 @@ canvas {
   .parigoPage,
   .mixtapePage,
   .zinePage {
-    width: 300px;
+    width: 500px;
     height: 6vh;
     margin: 0; 
   }
