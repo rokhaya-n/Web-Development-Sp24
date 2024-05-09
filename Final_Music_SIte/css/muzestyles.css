@@ -154,6 +154,7 @@ canvas {
   position: relative;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 80vh;
 }
 
 .spotify {
@@ -265,7 +266,7 @@ canvas {
   position: relative;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 50vh;
+  margin-bottom: 80vh;
 }
 
 .zineTitle {
