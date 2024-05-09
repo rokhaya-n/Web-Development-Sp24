@@ -203,8 +203,8 @@ canvas {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center; 
+  align-items: center; 
   flex-direction: row;
   display: none; 
   top: 50%;

@@ -33,18 +33,17 @@ $(document).ready(function() {
         var $albumCoversContainer = $(".albumCovers");
         $albumCoversContainer.empty(); // Clear previous album covers
 
-        // Shuffle the album covers array
+        //math=shuffle!!
         albumCovers.sort(() => Math.random() - 0.5);
 
-        // Select the first 6 album covers after shuffling
+        //choose only 6 covers
         var selectedAlbumCovers = albumCovers.slice(0, 6);
 
-        // Append the selected album covers to the container with animation
         selectedAlbumCovers.forEach(function(albumCover) {
             var $img = $('<img class="img" src="' + albumCover + '" />');
             $albumCoversContainer.append($img);
 
-            // Animation using GSAP
+            //WAIT SUCCESSFUL GSAP HERE
             TweenMax.from($img, 2, {
                 delay: Math.random(), // Delay the animation randomly
                 x: randomNumber(-500, 500),
@@ -55,16 +54,15 @@ $(document).ready(function() {
             });
         });
 
-        // Show the album covers container
         $albumCoversContainer.show();
     }
 
-    // Event listener for the button click
+    //generate on click
     $("#generateMixtapeBut").click(function() {
         generateMixtape(); // Call the generateMixtape function when the button is clicked
     });
 
-    // Function to generate random number within a range
+    //random math
     function randomNumber(min, max) {
         return Math.random() * (max - min) + min;
     }

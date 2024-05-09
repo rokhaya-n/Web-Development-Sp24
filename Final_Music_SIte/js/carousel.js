@@ -1,16 +1,17 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+//forward backwards
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+//to control actual slides
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//the actual slides function
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("zineSpreads");
